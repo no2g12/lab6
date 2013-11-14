@@ -1,20 +1,20 @@
 <!-- ============================== -->
 <!-- PART 1 PROCESS BID PLACEHOLDER -->
 <!-- ============================== -->
+<?php
+  require('includes/db.php');
+?>
+
 <html>
 <body>
-
-Your name is <?php  
+<?php
   $name = $_POST["name"];
-  print_r($name); ?>
-  <br>
-Your bid is : <?php 
   $bid = $_POST["bid"];
-  print_r($bid); ?>
-  <br>
-The car id is : <?php
   $id = $_POST["car_id"];
-  print_r($id); ?>
-  
+  $result = $db->query("INSERT INTO bid (car_id, name, value, datetime) VALUES ('$id', '$name', '$bid', NOW())");
+  echo ("Your name is : ".$name."<br>");
+  echo ("Your bid is : £".$bid."<br>");
+  echo ("The car id is : ".$id."<br>");
+?>
 </body>
 </html>
