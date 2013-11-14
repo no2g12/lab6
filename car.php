@@ -96,6 +96,7 @@ require('classes/bid.class.php');
         </div>
           <input type="integer" name="bid"><br>
           <input type="Submit">
+          <input type="hidden" name="car_id" value="<?=$_GET['id']?>">
 			</form>
 			
 		</div><!-- /car bid form -->
