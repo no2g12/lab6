@@ -10,5 +10,11 @@ Your name is <?php
   <br>
 Your bid is : <?php 
   $bid = $_POST["bid"];
-  print_r($bid);
-?>
+  print_r($bid); ?>
+  <br>
+The car id is : <?php
+  $id = $_POST["car_id"];
+  print_r($id); ?>
+  
+</body>
+</html>
