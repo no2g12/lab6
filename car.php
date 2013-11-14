@@ -86,6 +86,17 @@ require('classes/bid.class.php');
 			<!-- PART 1 BID FORM PLACEHOLDER -->
 			<!-- =========================== -->
 			
+			<form action="process-bid.php" method="post">
+        <div class="col-md-2">
+          Name: 
+        </div>
+          <input type="text" name="name"><br>
+        <div class="col-md-2">
+          Your Bid: 
+        </div>
+          <input type="integer" name="bid"><br>
+          <input type="Submit">
+			</form>
 			
 		</div><!-- /car bid form -->
 	<?php
